@@ -1,5 +1,7 @@
 #ngMarkdown
 
+**v 1.0.0**
+
 ##Install it
 
 1. Grab the `wizMarkdown.min.js` file and drop it into your application
