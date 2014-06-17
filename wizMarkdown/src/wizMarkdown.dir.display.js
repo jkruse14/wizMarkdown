@@ -10,7 +10,10 @@
 		template: '<div class="markdown-output"></div>',
 		link: function (scope, elem, attrs) {
 			scope.$watch('content', function () {
-				if (!scope.content) return null;
+				if (!scope.content) {
+					elem.html('');
+					return;
+				}
 				elem.html(wizMarkdownSvc.Transform(scope.content));
 				// Apply highlighting when required
 				angular.forEach(elem.find('pre'), function (value) {
