@@ -1,7 +1,7 @@
 {
 	"name": "wizMarkdown",
 	"title": "wizMarkdown",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"devDependencies": {
 		"grunt": "^0.4.4",
 		"grunt-contrib-concat": "^0.1.3",
