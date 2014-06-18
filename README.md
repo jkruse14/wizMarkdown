@@ -1,6 +1,6 @@
 #ngMarkdown
 
-**v 1.0.0**
+**v 1.1.0**
 
 ##Install it
 
@@ -79,6 +79,11 @@ h5,
 h6,
 tab,
 untab
+
+##Textarea only
+If you simply want a textarea without the toolbars then use:
+
+    <wiz-markdown-input content="mdTextarea"></wiz-markdown-input>
 
 ##Syntax highlighting
 
