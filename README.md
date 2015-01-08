@@ -1,11 +1,11 @@
-#ngMarkdown
+#wizMarkdown
 
-**v 1.1.0**
+**v1.2.0**
 
 ##Install it
 
-1. Grab the `wizMarkdown.min.js` file and drop it into your application
-2. ngMarkdown requires `ngSanitize` so go ahead and add a script reference to `angular-sanitize.js`
+1. `bower install wiz-markdown`
+2. wizMarkdown requires `ngSanitize` so go ahead and add a script reference to `angular-sanitize.js`
 3. Add `'wiz.markdown'` as a required module
 
 Example:
@@ -99,7 +99,7 @@ Now have a play by downloading the zip and running the code ;-)
 
 ##Licence
 
-ngMarkdown is covered by the MIT Licence
+wizMarkdown is covered by the MIT Licence
 
 Copyright (c) 2014 Grumpy Wizards
 
