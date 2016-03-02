@@ -5850,13 +5850,14 @@ angular.module('wiz.markdown')
 	return {
 		restrict: 'E',
 		scope: {
-			'content': '='
+			'content': '=',
+			'textareaclass':'@?'
 		},
 		replace: true,
 		transclude: true,
 		template: '<div class="markdown-editor">' +
 		            '<div class="markdown-toolbar" ng-if="!toolbarBottom" ng-transclude></div>' +
-		            '<textarea class="markdown-input" ng-model="content"></textarea>' +
+		            '<textarea class="markdown-input {{textareaclass}}" ng-model="content"></textarea>' +
 		            '<div class="markdown-toolbar" ng-if="toolbarBottom" ng-transclude></div>' +
 		          '</div>',
 		controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) { }],
@@ -5904,8 +5905,10 @@ angular.module('wiz.markdown')
 		restrict: 'E',
 		replace: true,
 		transclude: true,
-		scope: {},
-		template: '<button type="button" ng-click="format()" ng-transclude></button>',
+		scope: {
+			'buttonclass':'@?'
+		},
+		template: '<button class="{{buttonclass}}" type="button" ng-click="format()" ng-transclude></button>',
 		link: function (scope, elem, attrs, wizMarkdownEditorCtrl) {
 			if (attrs.command) {
 				scope.format = function () {
