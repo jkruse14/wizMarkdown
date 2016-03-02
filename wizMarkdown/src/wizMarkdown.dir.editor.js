@@ -4,13 +4,14 @@
 	return {
 		restrict: 'E',
 		scope: {
-			'content': '='
+			'content': '=',
+			'textareaclass':'@?'
 		},
 		replace: true,
 		transclude: true,
 		template: '<div class="markdown-editor">' +
 		            '<div class="markdown-toolbar" ng-if="!toolbarBottom" ng-transclude></div>' +
-		            '<textarea class="markdown-input" ng-model="content"></textarea>' +
+		            '<textarea class="markdown-input {{textareaclass}}" ng-model="content"></textarea>' +
 		            '<div class="markdown-toolbar" ng-if="toolbarBottom" ng-transclude></div>' +
 		          '</div>',
 		controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) { }],

@@ -6,8 +6,10 @@
 		restrict: 'E',
 		replace: true,
 		transclude: true,
-		scope: {},
-		template: '<button type="button" ng-click="format()" ng-transclude></button>',
+		scope: {
+			'buttonclass':'@?'
+		},
+		template: '<button class="{{buttonclass}}" type="button" ng-click="format()" ng-transclude></button>',
 		link: function (scope, elem, attrs, wizMarkdownEditorCtrl) {
 			if (attrs.command) {
 				scope.format = function () {
