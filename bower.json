@@ -1,7 +1,7 @@
 {
   "name": "wiz-markdown",
   "description": "",
-  "main": "",
+  "main": "wizMarkdown/wizMarkdown.min.js",
   "authors": [
     "gregorypratt"
   ],
