@@ -1,7 +1,5 @@
 #wizMarkdown
 
-**v1.2.0**
-
 ##Install it
 
 1. `bower install wiz-markdown`
