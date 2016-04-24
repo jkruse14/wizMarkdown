@@ -6,6 +6,7 @@
 	markdownSvc.SafeMode = false;
 	markdownSvc.NewWindowForExternalLinks = true;
 	markdownSvc.AutoHeadingIDs = true;
+    markdownSvc.MarkdownDeepEditor = MarkdownDeepEditor;
 
 	return markdownSvc;
 }]);
