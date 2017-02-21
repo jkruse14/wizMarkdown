@@ -1416,8 +1416,8 @@ var MarkdownDeepEditor=new function(){
         }
     }
     
-    delete priv;
-    delete pub;
+    priv = null;
+    pub = null;
 
     // Exports
     this.Editor=Editor;

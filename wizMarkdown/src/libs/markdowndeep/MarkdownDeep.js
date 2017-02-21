@@ -327,7 +327,7 @@ var MarkdownDeep = new function () {
         if (footnote != undefined) {
             // Move the foot note to the used footnote list
             this.m_UsedFootnotes.push(footnote);
-            delete this.m_Footnotes[id];
+            this.m_Footnotes[id] = null;
 
             // Return it's display index
             return this.m_UsedFootnotes.length - 1;
@@ -1390,9 +1390,10 @@ var MarkdownDeep = new function () {
         "!": b | n,
         "head": b
     };
-    delete b;
-    delete i;
-    delete n;
+
+    b = null;
+    i = null;
+    n = null;
 
 
 
@@ -3614,7 +3615,7 @@ var MarkdownDeep = new function () {
         }
 
         // Remove it
-        delete tag.attributes["markdown"];
+        tag.attributes["markdown"] = null;
 
         // Parse mode
         if (md == "1")
